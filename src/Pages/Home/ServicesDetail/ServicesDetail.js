@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Shared = () => {
+const ServicesDetail = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const Shared = () => {
     );
 };
 
-export default Shared;
+export default ServicesDetail;

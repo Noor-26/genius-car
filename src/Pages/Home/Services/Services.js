@@ -14,14 +14,14 @@ const Services = () => {
     
     return (
         <div>
-            <h1 className="text-primary">Services  </h1>
-            <div className="container services-container ">
+            <h1 className="text-primary my-4">Services  </h1>
+            <div className="container services-container "  id="service">
 
             {
                 services.map(service=><Service key={services.id} service={service}/>)
             }
             </div>
-            <Experts/>
+           
         </div>
     );
 };
