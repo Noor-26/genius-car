@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Experts from '../Experts/Experts';
 import Service from '../Service/Service';
 import './Services.css'
 
@@ -20,7 +21,7 @@ const Services = () => {
                 services.map(service=><Service key={services.id} service={service}/>)
             }
             </div>
-            
+            <Experts/>
         </div>
     );
 };
