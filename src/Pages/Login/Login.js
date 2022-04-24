@@ -1,8 +1,10 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef} from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
 import auth from '../../firebase.init';
 import {  useNavigate } from 'react-router-dom';
+import SocialLogin from '../SocialLogin/SocialLogin'
+
 
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 const Login = () => {
@@ -56,7 +58,10 @@ const Login = () => {
     Submit
   </Button>
 </Form>
+<SocialLogin/>
+        
         </div>
+        
     );
 };
 

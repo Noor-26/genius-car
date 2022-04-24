@@ -14,7 +14,7 @@ const Header = () => {
         <div>
               <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
   <Container>
-  <Navbar.Brand href="#home">
+  <Navbar.Brand as={Link} to="/">
     <img src={logo} alt=""  width="150px"/> 
   </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -33,7 +33,7 @@ const Header = () => {
     <Nav>
       <Nav.Link as={Link} to="/about">About</Nav.Link>
       {
-        user ? <button onClick={logout}>sign out</button> : 
+        user ? <button onClick={logout} className="btn text-white">Sign out</button> : 
       <Nav.Link as={Link} to="/login">
         Login
       </Nav.Link>
