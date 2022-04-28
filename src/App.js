@@ -12,6 +12,7 @@ import NotFound from './Pages/NotFound/NotFound';
 import Register from './Pages/Register/Register';
 import RequireAuth from './Pages/RequireAuth/RequireAuth';
 import Checkout from './Pages/Checkout/Checkout';
+import Addservice from './Pages/Addservice/Addservice';
 
 
 function App() {
@@ -24,12 +25,13 @@ function App() {
      <Route path="/service/:serviceId" element={<ServicesDetail/>}/>
      <Route path="/about" element={<About/>}/>
      <Route path='/login' element={<Login/>}/>
-     <Route path="/checkout" element={
+     <Route path="/checkout/:serviceId" element={
        <RequireAuth>
          <Checkout/>
        </RequireAuth>
      }/>
      <Route path="/register" element={<Register/>}/> 
+     <Route path="/addservice" element={<Addservice/>}/> 
      <Route path="*" element={<NotFound/>}/>
    </Routes>
    <Footer/>
